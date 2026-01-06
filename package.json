@@ -1,0 +1,78 @@
+{
+  "name": "antigravity-quota-monitor",
+  "publisher": "antigravity",
+  "displayName": "Antigravity Quota Monitor",
+  "description": "Monitor your Antigravity quotas directly in VS Code",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "keywords": [
+    "antigravity",
+    "quota",
+    "monitor",
+    "ai",
+    "gemini",
+    "claude",
+    "gpt"
+  ],
+  "author": "VK",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antigravity/antigravity-quota-monitor"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity.showQuota",
+        "title": "Show Antigravity Quota"
+      }
+    ],
+    "configuration": {
+      "title": "Antigravity Quota Monitor",
+      "properties": {
+        "antigravity.apiEndpoint": {
+          "type": "string",
+          "default": "",
+          "description": "API endpoint for fetching quota data"
+        },
+        "antigravity.authToken": {
+          "type": "string",
+          "default": "",
+          "description": "Authentication token for the API (optional)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.2.5",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "@vscode/test-electron": "^2.3.2",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3"
+  }
+}
