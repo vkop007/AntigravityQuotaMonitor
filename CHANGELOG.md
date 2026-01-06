@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the "antigravity-quota-monitor" extension will be documented in this file.
+All notable changes to the "antigravity-quota-usage-tracker" extension will be documented in this file.
 
 ## [0.0.3] - 2026-01-07
 

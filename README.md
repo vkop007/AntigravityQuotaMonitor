@@ -34,7 +34,7 @@ You can customize the extension via the following settings:
 
 ## Support
 
-For issues or feature requests, please visit the [GitHub repository](https://github.com/vkop007/antigravity-quota-monitor).
+For issues or feature requests, please visit the [GitHub repository](https://github.com/vkop007/antigravity-quota-usage-tracker).
 
 ---
 
