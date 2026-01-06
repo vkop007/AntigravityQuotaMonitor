@@ -1,6 +1,8 @@
 .vscode/**
 .vscode-test/**
-out/test/**
+out/*
+!out/extension.js
+!out/extension.js.map
 src/**
 .gitignore
 .vscodeignore
