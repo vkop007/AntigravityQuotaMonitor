@@ -3,7 +3,7 @@
 Monitor your Antigravity AI quotas directly in VS Code. Never lose track of your model usage again.
 
 <p align="center">
-  <img src="icon.png" width="128" alt="Antigravity Quota Monitor" />
+  <img src="icon.png" width="200" alt="Antigravity Quota Monitor" />
 </p>
 
 ## Features
